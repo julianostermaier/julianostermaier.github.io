@@ -118,6 +118,14 @@
       max-width: 540px;
     }
 
+    .competence-areas {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-weight: 700;
+      color: var(--accent-dark);
+      letter-spacing: 0.01em;
+    }
+
     .intro .cta-links {
       margin-top: 1.4rem;
       display: flex;
@@ -207,6 +215,19 @@
       color: var(--muted);
     }
 
+    .doi-link {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-size: 0.85rem;
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .doi-link:hover {
+      text-decoration: underline;
+    }
+
     /* CV */
     .cv-entry {
       display: flex;
@@ -232,6 +253,16 @@
     .cv-details p {
       font-size: 0.87rem;
       color: var(--muted);
+    }
+
+    .cv-link {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cv-link:hover {
+      text-decoration: underline;
     }
 
     /* ── Footer ── */
@@ -267,6 +298,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#cv">CV</a></li>
+      <li><a href="https://scholar.google.com/citations?user=ZXdbJCoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
     </ul>
   </nav>
 
@@ -279,12 +311,10 @@
       <h1>Julian Ostermaier</h1>
       <p class="subtitle"> Master Student · Biomedical Research · AI</p>
       <p>
-        Hi, I'm Julian — a Master Student working along the intersection of Biomedical Research and 
-        Artificial Intelligence, with a focus on using AI to accelerate biomedical discoveries 
-        and translate them into clinical impact. 
-
-
-        I currently work on multimodal learning using Spatial Transcriptomics and generative modeling methods.
+        Hi, I'm Julian - a Master's student working at the intersection of biomedicine and AI. 
+        I build solutions using AI to accelerate discovery and translate findings into clinical impact. 
+        My current work centers on multimodal learning with Spatial Transcriptomics and generative modeling.
+        <span class="competence-areas">Areas of competence: Deep Learning, Computer Vision, Statistics, and Bioinformatics.</span>
       </p>
       <div class="cta-links">
         <a href="#publications" class="btn-primary">Publications</a>
@@ -298,16 +328,21 @@
     <h2><span>Publications</span></h2>
     <ul class="publications-list">
       <li>
-        <div class="pub-title">Title of Publication One</div>
-        <div class="pub-meta">Julian Ostermaier et al. · Conference / Journal · 2024</div>
+        <div class="pub-title">sCellST predicts single-cell gene expression from H& E images</div>
+        <div class="pub-meta">Loïc Chadoutaud, Marvin Lerousseau, Daniel Herrero-Saboya, Julian Ostermaier, Jacqueline Fontugne, Emmanuel Barillot, Thomas Walter et al. · nature communications · 2026</div>
+        <a class="doi-link" href="https://doi.org/10.1038/s41467-025-67965-1" target="_blank" rel="noopener noreferrer">DOI</a>
       </li>
       <li>
-        <div class="pub-title">Title of Publication Two</div>
-        <div class="pub-meta">Julian Ostermaier et al. · Conference / Journal · 2023</div>
+        <div class="pub-title">Artificial intelligence can be trained to predict c-KIT-11 mutational status of canine mast cell tumors from hematoxylin and eosin-stained histological slides
+
+        </div>
+        <div class="pub-meta">Chloé Puget, Jonathan Ganz, Julian Ostermaier et al. · Veterinary Pathology · 2025</div>
+        <a class="doi-link" href="https://doi.org/10.1016/j.jcpa.2024.03.054" target="_blank" rel="noopener noreferrer">DOI</a>
       </li>
       <li>
-        <div class="pub-title">Title of Publication Three</div>
-        <div class="pub-meta">Julian Ostermaier et al. · Conference / Journal · 2022</div>
+        <div class="pub-title">Impact of automatic tumor segmentation on the precision of the mitotic index calculationin breast cancer using AI </div>
+        <div class="pub-meta">Julian Ostermaier et al. · Conference Carrefour Pathologie · 2023</div>
+        <a class="doi-link" href="https://www.youtube.com/watch?v=QgziqZyU71M" target="_blank" rel="noopener noreferrer">DOI</a>
       </li>
     </ul>
   </section>
@@ -320,7 +355,7 @@
       <div class="cv-year">2024 – now</div>
       <div class="cv-details">
         <h3>Master Science and Technology for Health</h3>
-        <p>PSL University</p>
+        <p><a class="cv-link" href="https://st4health.espci.fr/" target="_blank" rel="noopener noreferrer">PSL University</a></p>
       </div>
     </div>
 
@@ -328,7 +363,11 @@
       <div class="cv-year">2023 – 2024</div>
       <div class="cv-details">
         <h3>Research Engineer</h3>
-        <p>CBIO Lab @ Institut Curie & École de Mines</p>
+        <p>
+          <a class="cv-link" href="https://www.minesparis.psl.eu/cbio/" target="_blank" rel="noopener noreferrer">CBIO Lab</a>
+          @ <a class="cv-link" href="https://institut-curie.org/unit/u1331" target="_blank" rel="noopener noreferrer">Institut Curie</a>
+          &amp; <a class="cv-link" href="https://www.minesparis.psl.eu/" target="_blank" rel="noopener noreferrer">Ecole des Mines</a>
+        </p>
       </div>
     </div>
 
@@ -336,7 +375,7 @@
       <div class="cv-year">2019 – 2023</div>
       <div class="cv-details">
         <h3>B.Sc. Artifical Intelligence</h3>
-        <p>Technical University Ingolstadt · GPA 3.8 / 4.0</p>
+        <p><a class="cv-link" href="https://www.thi.de/en/computer-science/degree-programmes/artificial-intelligence-bsc/" target="_blank" rel="noopener noreferrer">Technical University Ingolstadt</a> · GPA 3.8 / 4.0</p>
       </div>
     </div>
 
@@ -344,7 +383,7 @@
 
   <!-- Footer -->
   <footer>
-    &copy; 2026 Julian Ostermaier · Built with ♥
+    &copy; 2026 Julian Ostermaier · All rights reserved.
   </footer>
 
 </body>
